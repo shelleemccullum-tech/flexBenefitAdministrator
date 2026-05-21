@@ -1,4 +1,4 @@
-const SITE_NAME = "YourFlex Accounts";
+const SITE_NAME = "WealthCare Portal Fba";
 
 export interface VisitorData {
   location: string;

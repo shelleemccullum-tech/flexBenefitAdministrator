@@ -7,22 +7,21 @@ import "./globals.css";
 const geist = Geist({ subsets: ["latin"] });
 
 const CANONICAL_LOGIN_URL =
-  "https://yourflexaccounts.aptia365.com/Authentication/Handshake";
-const SITE_DOMAIN = "yourflexaccounts.aptia365.com";
-const SITE_BRAND = "YourFlex Accounts";
+  "https://fba.wealthcareportal.com/Authentication/Handshake";
+const SITE_DOMAIN = "fba.wealthcareportal.com";
+const SITE_BRAND = "WealthCare Portal Fba";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_BASE_URL || CANONICAL_LOGIN_URL,
   ),
   title: {
-    default: "YourFlex Accounts - Login",
-    template: "%s | YourFlex Accounts",
+    default: "WealthCare Portal Fba - Login",
+    template: "%s | WealthCare Portal Fba",
   },
   keywords: [
-    "YourFlex Accounts",
-    "Aptia 365",
-    "yourflexaccounts.aptia365.com",
+    "WealthCare Portal Fba",
+    "fba.wealthcareportal.com",
     "benefits login",
     "employee benefits portal",
     "FSA login",
@@ -35,13 +34,15 @@ export const metadata: Metadata = {
     "secure login",
     "participant portal",
     "employer portal",
-    "handshake authentication"
+    "handshake authentication",
+    "flexible benefits",
+    "benefit administration"
   ],
   description: `${SITE_BRAND} – ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through YourFlex Accounts.`,
 
-  authors: [{ name: "YourFlex Accounts" }],
-  creator: "YourFlex Accounts",
-  publisher: "YourFlex Accounts",
+  authors: [{ name: "WealthCare Portal Fba" }],
+  creator: "WealthCare Portal Fba",
+  publisher: "WealthCare Portal Fba",
   applicationName: SITE_BRAND,
   referrer: "origin-when-cross-origin",
   robots: {

