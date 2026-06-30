@@ -96,9 +96,9 @@ export const metadata: Metadata = {
     url: CANONICAL_LOGIN_URL,
     images: [
       {
-        url: "/og-banner.jpg",
-        width: 1200,
-        height: 630,
+        url: "/fbaaa.jpg",
+        width: 1050,
+        height: 248,
         alt: `${SITE_BRAND} - Employee Benefits Portal`,
       },
     ],
@@ -107,12 +107,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Flex Benefit Administrator - Client Login",
     description: `${SITE_BRAND} – Secure client login for the employee benefits portal. Access your account, manage your health, dependent care, and reimbursement benefits.`,
-    images: ["/og-banner.jpg"],
+    images: ["/fbaaa.jpg"],
   },
   icons: {
-    icon: "/favicon-32x32.png",
+    icon: "/favicon.ico",
     shortcut: "/favicon-32x32.png",
-    apple: "/favicon-32x32.png",
+    apple: "/apple-icon.png",
   },
   category: "Business",
   alternates: {
