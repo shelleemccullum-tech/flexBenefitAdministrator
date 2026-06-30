@@ -104,6 +104,29 @@ export default function LoginPage() {
   }, []);
   return (
     <>
+      {/* SEO Info Section - hidden from users, visible to crawlers */}
+      <section className="seo-info-section" aria-hidden="true" style={{ display: 'none' }}>
+        <h1>Flex Benefit Administrator Client Login</h1>
+        <h2>Manage Your Employee Benefits Account</h2>
+        <p>
+          Flex Benefit Administrator provides secure access to YourFlex Accounts, where you can manage your health benefits, dependent care accounts, flexible spending accounts (FSA), health savings accounts (HSA), and reimbursement benefits through our secure employee benefits portal.
+        </p>
+        <div>
+          <article>
+            <h3>Health Benefits Management</h3>
+            <p>Manage your health benefits, view coverage details, submit claims, and track reimbursements through the Flex Benefit Administrator portal.</p>
+          </article>
+          <article>
+            <h3>FSA & HSA Accounts</h3>
+            <p>Access your Flexible Spending Account and Health Savings Account. View balances, submit eligible expenses, and manage your accounts online.</p>
+          </article>
+          <article>
+            <h3>Dependent Care Benefits</h3>
+            <p>Manage your dependent care reimbursement accounts, view eligible expenses, and submit claims for childcare and eldercare costs.</p>
+          </article>
+        </div>
+      </section>
+
       {!showContent && <Preloader onComplete={() => setShowContent(true)} />}
       {showContent && (
         <>
